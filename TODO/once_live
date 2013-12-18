@@ -1,0 +1,30 @@
+1. Test if the cur_pg RegExps still behave as expected
+
+2. Watch closely the consequences of allowing Guest to change album cover
+
+3. Watch all instances of "stalltime" to see how they perform live, as pages and AJAX-loaded
+    scripts take more time to download
+
+4. REMEMBER: change "westerb_sal.dev_mode", "westerb_sal.HOME" in JS and the "HOME" definition in PHP
+
+5. Configure the php.ini file to disable error reporting and also to allow bigger files to be uploaded
+    (at least this is what I suppose explains the crushes that happen whenever I try uploading files > 17MB)
+
+7. Watch the 1000ms delay to initiate the "login watch"...might need to lower it depending on how long the $.get()
+    function called in "westerb_sal.check_login()" on every page refresh takes when the calls are now made to the
+    remote server
+
+8. Consider using Google's CDN for jQuery ('1' for latest version < 2)
+
+10. Watch the 20000ms timeout setup in "jQuery.ajaxSetup"-- might be too short
+
+11. Add 'index.php' to 'public/ajax', 'public/images', 'public/layouts' for a 401/403
+
+DONE:
+
+6. What of the case scripts loaded via $.getScript(...) load too long and meanwhile the "#main" div is still
+    invisible (possible solution: a combination of $'s timeouts, the UI ellipses and the try/catch block-- throw
+    an exception on a timeout and display the content anyways with a UI message to inform the users of the failure
+    to download the scripts)-- Solved mostly with "live events"
+
+9. Remove/comment out all instances of "console.log()"-- SOLVED WITH MINIFICATION
