@@ -7,3 +7,4 @@ log/*.log.[0-9]
 TODO/
 public/images/
 nbproject
+vendor/
