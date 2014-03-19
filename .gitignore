@@ -15,4 +15,5 @@ nbproject
 .project
 .settings
 composer.lock
+LICENSE.txt
 vendor/bin
