@@ -1,0 +1,23 @@
+{
+    "name": "westerb_sal",
+    "version": "1.0.0",
+    "homepage": "https://github.com/webandudu/westerb_sal",
+    "authors": [
+        "Westermack W A Batanyita <webandudu@gmail.com>"
+    ],
+    "description": "A simple JavaScript and PHP application for organizing personal photos",
+    "dependencies": {
+        "jquery": "2.1.0",
+        "underscore": "1.5.2",
+        "backbone": "1.1.1"
+    },
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
